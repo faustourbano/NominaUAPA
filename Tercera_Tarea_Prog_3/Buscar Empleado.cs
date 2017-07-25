@@ -78,5 +78,10 @@ namespace Tercera_Tarea_Prog_3
 
             btnaceptar.PerformClick();
         }
+
+        private void Buscar_Empleado_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

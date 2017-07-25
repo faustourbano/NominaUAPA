@@ -65,6 +65,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btncancelar = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.btnnuevo = new System.Windows.Forms.Button();
             this.GruposDatos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEmpleado)).BeginInit();
             this.GrupoNomina.SuspendLayout();
@@ -349,6 +350,7 @@
             // 
             // GrupoNomina
             // 
+            this.GrupoNomina.Controls.Add(this.btnnuevo);
             this.GrupoNomina.Controls.Add(this.cbocargo);
             this.GrupoNomina.Controls.Add(this.label12);
             this.GrupoNomina.Controls.Add(this.label5);
@@ -370,7 +372,7 @@
             this.cbocargo.FormattingEnabled = true;
             this.cbocargo.Location = new System.Drawing.Point(55, 18);
             this.cbocargo.Name = "cbocargo";
-            this.cbocargo.Size = new System.Drawing.Size(277, 21);
+            this.cbocargo.Size = new System.Drawing.Size(201, 21);
             this.cbocargo.TabIndex = 57;
             // 
             // label12
@@ -444,6 +446,16 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // btnnuevo
+            // 
+            this.btnnuevo.Location = new System.Drawing.Point(257, 18);
+            this.btnnuevo.Name = "btnnuevo";
+            this.btnnuevo.Size = new System.Drawing.Size(75, 23);
+            this.btnnuevo.TabIndex = 58;
+            this.btnnuevo.Text = "Nuevo";
+            this.btnnuevo.UseVisualStyleBackColor = true;
+            this.btnnuevo.Click += new System.EventHandler(this.btnnuevo_Click);
+            // 
             // EmpleadoForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -516,5 +528,6 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label lbedad;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnnuevo;
     }
 }

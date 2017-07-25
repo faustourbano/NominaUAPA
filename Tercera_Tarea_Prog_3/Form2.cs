@@ -338,5 +338,11 @@ namespace Tercera_Tarea_Prog_3
         {
 
         }
+
+        private void btnnuevo_Click(object sender, EventArgs e)
+        {
+            frmcargo Cargo = new frmcargo();
+            Cargo.Show();
+        }
     }
 }

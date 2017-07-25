@@ -18,3 +18,23 @@ C:\Users\INSPIRON\Desktop\TODOS DEL ESCRITORIO\DISEÑO DE PAG. WEB\PROGRAMACION 
 C:\Users\INSPIRON\Desktop\TODOS DEL ESCRITORIO\DISEÑO DE PAG. WEB\PROGRAMACION BASICA\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.Form3.resources
 C:\Users\INSPIRON\Desktop\TODOS DEL ESCRITORIO\DISEÑO DE PAG. WEB\PROGRAMACION BASICA\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.EmpleadoForm.resources
 C:\Users\INSPIRON\Desktop\TODOS DEL ESCRITORIO\DISEÑO DE PAG. WEB\PROGRAMACION BASICA\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.Buscar_Empleado.resources
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\bin\Debug\Tercera_Tarea_Prog_3.exe.config
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.exe
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.pdb
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\bin\Debug\Tercera_Tarea_Prog_3.exe
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\bin\Debug\Tercera_Tarea_Prog_3.pdb
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\bin\Debug\EntityFramework.dll
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\bin\Debug\EntityFramework.SqlServer.dll
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\bin\Debug\System.Data.SQLite.dll
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\bin\Debug\EntityFramework.xml
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\bin\Debug\EntityFramework.SqlServer.xml
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\bin\Debug\System.Data.SQLite.xml
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.csprojResolveAssemblyReference.cache
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.Buscar_Empleado.resources
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.EmpleadoForm.resources
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.Properties.Resources.resources
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.csproj.GenerateResource.Cache
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.frmcargo.resources
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.BuscarCargos.resources

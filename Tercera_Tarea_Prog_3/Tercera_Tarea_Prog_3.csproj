@@ -75,14 +75,14 @@
     <Compile Include="Buscar Empleado.Designer.cs">
       <DependentUpon>Buscar Empleado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Conexion\Conectar.cs" />
-    <Compile Include="Conexion\SentenciaSQL.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="BuscarCargos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="BuscarCargos.Designer.cs">
+      <DependentUpon>BuscarCargos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Conexion\Conectar.cs" />
+    <Compile Include="Conexion\SentenciaSQL.cs" />
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,8 +100,8 @@
     <EmbeddedResource Include="Buscar Empleado.resx">
       <DependentUpon>Buscar Empleado.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="BuscarCargos.resx">
+      <DependentUpon>BuscarCargos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
