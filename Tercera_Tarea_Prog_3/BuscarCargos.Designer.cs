@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.dtbuscarempleado = new System.Windows.Forms.DataGridView();
-            this.btncerrar1 = new System.Windows.Forms.Button();
-            this.btnaceptar = new System.Windows.Forms.Button();
             this.Cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btncerrar1 = new System.Windows.Forms.Button();
+            this.btnaceptar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtbuscarempleado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -52,6 +52,21 @@
             this.dtbuscarempleado.TabIndex = 0;
             this.dtbuscarempleado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtbuscarempleado_CellContentClick);
             this.dtbuscarempleado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtbuscarempleado_CellDoubleClick);
+            // 
+            // Cod
+            // 
+            this.Cod.DataPropertyName = "cod_cargo";
+            this.Cod.HeaderText = "Codigo";
+            this.Cod.Name = "Cod";
+            this.Cod.ReadOnly = true;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.DataPropertyName = "Descripcion";
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            this.Descripcion.Width = 250;
             // 
             // btncerrar1
             // 
@@ -76,30 +91,17 @@
             this.btnaceptar.UseVisualStyleBackColor = true;
             this.btnaceptar.Click += new System.EventHandler(this.btnaceptar_Click);
             // 
-            // Cod
-            // 
-            this.Cod.DataPropertyName = "cod_cargo";
-            this.Cod.HeaderText = "Codigo";
-            this.Cod.Name = "Cod";
-            this.Cod.ReadOnly = true;
-            // 
-            // Descripcion
-            // 
-            this.Descripcion.DataPropertyName = "Descripcion";
-            this.Descripcion.HeaderText = "Descripcion";
-            this.Descripcion.Name = "Descripcion";
-            this.Descripcion.ReadOnly = true;
-            this.Descripcion.Width = 250;
-            // 
             // BuscarCargos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(431, 306);
+            this.BackColor = System.Drawing.SystemColors.Desktop;
+            this.ClientSize = new System.Drawing.Size(420, 306);
             this.Controls.Add(this.btncerrar1);
             this.Controls.Add(this.btnaceptar);
             this.Controls.Add(this.dtbuscarempleado);
             this.Name = "BuscarCargos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BuscarCargos";
             this.Load += new System.EventHandler(this.BuscarCargos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtbuscarempleado)).EndInit();

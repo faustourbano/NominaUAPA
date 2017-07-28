@@ -38,3 +38,6 @@ C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_P
 C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.csproj.GenerateResource.Cache
 C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.frmcargo.resources
 C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.BuscarCargos.resources
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.MasterNomina.resources
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.Principal.resources
+C:\Proyectos\Tercera_Tarea_Prog_3\Tercera_Tarea_Prog_3\obj\Debug\Tercera_Tarea_Prog_3.Buscar_Nomina.resources

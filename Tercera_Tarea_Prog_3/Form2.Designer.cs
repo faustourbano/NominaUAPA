@@ -36,7 +36,6 @@
             this.txtapellidos = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnbuscar = new System.Windows.Forms.Button();
             this.txtfecha = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.GruposDatos = new System.Windows.Forms.GroupBox();
@@ -54,8 +53,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
-            this.pictureEmpleado = new System.Windows.Forms.PictureBox();
             this.GrupoNomina = new System.Windows.Forms.GroupBox();
+            this.btnnuevo = new System.Windows.Forms.Button();
             this.cbocargo = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -65,10 +64,11 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btncancelar = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.btnnuevo = new System.Windows.Forms.Button();
+            this.pictureEmpleado = new System.Windows.Forms.PictureBox();
+            this.btnbuscar = new System.Windows.Forms.Button();
             this.GruposDatos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEmpleado)).BeginInit();
             this.GrupoNomina.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEmpleado)).BeginInit();
             this.SuspendLayout();
             // 
             // btncrear
@@ -151,18 +151,6 @@
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 38;
             this.label1.Text = "Cod.";
-            // 
-            // btnbuscar
-            // 
-            this.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnbuscar.Location = new System.Drawing.Point(141, 25);
-            this.btnbuscar.Name = "btnbuscar";
-            this.btnbuscar.Size = new System.Drawing.Size(75, 23);
-            this.btnbuscar.TabIndex = 51;
-            this.btnbuscar.Text = "Buscar";
-            this.btnbuscar.UseVisualStyleBackColor = true;
-            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
             // txtfecha
             // 
@@ -337,17 +325,6 @@
             this.txtnombre.Size = new System.Drawing.Size(272, 20);
             this.txtnombre.TabIndex = 27;
             // 
-            // pictureEmpleado
-            // 
-            this.pictureEmpleado.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pictureEmpleado.Image = global::Tercera_Tarea_Prog_3.Properties.Resources.empleados_b;
-            this.pictureEmpleado.Location = new System.Drawing.Point(381, 61);
-            this.pictureEmpleado.Name = "pictureEmpleado";
-            this.pictureEmpleado.Size = new System.Drawing.Size(148, 170);
-            this.pictureEmpleado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureEmpleado.TabIndex = 55;
-            this.pictureEmpleado.TabStop = false;
-            // 
             // GrupoNomina
             // 
             this.GrupoNomina.Controls.Add(this.btnnuevo);
@@ -364,6 +341,16 @@
             this.GrupoNomina.TabIndex = 56;
             this.GrupoNomina.TabStop = false;
             this.GrupoNomina.Text = "Datos Nomina";
+            // 
+            // btnnuevo
+            // 
+            this.btnnuevo.Location = new System.Drawing.Point(257, 18);
+            this.btnnuevo.Name = "btnnuevo";
+            this.btnnuevo.Size = new System.Drawing.Size(75, 23);
+            this.btnnuevo.TabIndex = 58;
+            this.btnnuevo.Text = "Nuevo";
+            this.btnnuevo.UseVisualStyleBackColor = true;
+            this.btnnuevo.Click += new System.EventHandler(this.btnnuevo_Click);
             // 
             // cbocargo
             // 
@@ -446,15 +433,29 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // btnnuevo
+            // pictureEmpleado
             // 
-            this.btnnuevo.Location = new System.Drawing.Point(257, 18);
-            this.btnnuevo.Name = "btnnuevo";
-            this.btnnuevo.Size = new System.Drawing.Size(75, 23);
-            this.btnnuevo.TabIndex = 58;
-            this.btnnuevo.Text = "Nuevo";
-            this.btnnuevo.UseVisualStyleBackColor = true;
-            this.btnnuevo.Click += new System.EventHandler(this.btnnuevo_Click);
+            this.pictureEmpleado.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pictureEmpleado.Image = global::Tercera_Tarea_Prog_3.Properties.Resources.empleados_b;
+            this.pictureEmpleado.Location = new System.Drawing.Point(381, 61);
+            this.pictureEmpleado.Name = "pictureEmpleado";
+            this.pictureEmpleado.Size = new System.Drawing.Size(148, 170);
+            this.pictureEmpleado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureEmpleado.TabIndex = 55;
+            this.pictureEmpleado.TabStop = false;
+            // 
+            // btnbuscar
+            // 
+            this.btnbuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnbuscar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnbuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnbuscar.Location = new System.Drawing.Point(141, 26);
+            this.btnbuscar.Name = "btnbuscar";
+            this.btnbuscar.Size = new System.Drawing.Size(85, 20);
+            this.btnbuscar.TabIndex = 51;
+            this.btnbuscar.Text = "Buscar";
+            this.btnbuscar.UseVisualStyleBackColor = true;
+            this.btnbuscar.Click += new System.EventHandler(this.btnbuscar_Click);
             // 
             // EmpleadoForm
             // 
@@ -482,9 +483,9 @@
             this.Text = "Registro Empleado";
             this.GruposDatos.ResumeLayout(false);
             this.GruposDatos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureEmpleado)).EndInit();
             this.GrupoNomina.ResumeLayout(false);
             this.GrupoNomina.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureEmpleado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

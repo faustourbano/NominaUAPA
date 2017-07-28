@@ -16,7 +16,7 @@ namespace Tercera_Tarea_Prog_3
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EmpleadoForm());
+            Application.Run(new Principal());
         }
     }
 }

@@ -23,7 +23,6 @@ namespace Tercera_Tarea_Prog_3.Conexion
                 return true;
             }
             catch (Exception e)
-
             {
                 string n = e.Message;
                 return false;
@@ -32,6 +31,30 @@ namespace Tercera_Tarea_Prog_3.Conexion
             {
                 conexion.Close();
             }
+        }
+
+        public int  InsertSQLMaster(string sql)
+        {
+            int   id = 0;
+            try
+            {
+                conexion.Open();
+                SQLiteCommand Command = new SQLiteCommand( conexion);
+                Command.CommandType = CommandType.Text;
+                Command.CommandText = sql;
+                object i = Command.ExecuteScalar();
+                id = int.Parse(i.ToString());
+            }
+            catch (Exception e)
+
+            {
+                string n = e.Message;
+            }
+            finally
+            {
+                conexion.Close();
+            }
+            return id;
         }
 
 

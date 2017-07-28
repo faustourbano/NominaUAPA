@@ -72,16 +72,24 @@ namespace Tercera_Tarea_Prog_3
 
         private void BuscarEmpleado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow row = BuscarEmpleado.SelectedRows[0];
-            idEmpleado = int.Parse(row.Cells["Cod_empleado"].Value.ToString());
-
-
+            
             btnaceptar.PerformClick();
         }
 
         private void Buscar_Empleado_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnaceptar_Click(object sender, EventArgs e)
+        {
+            RetornarDatos();
+        }
+
+        void RetornarDatos()
+        {
+            DataGridViewRow row = BuscarEmpleado.SelectedRows[0];
+            idEmpleado = int.Parse(row.Cells["Cod_empleado"].Value.ToString());
         }
     }
 }
