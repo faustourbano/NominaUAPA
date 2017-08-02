@@ -427,6 +427,40 @@ namespace Tercera_Tarea_Prog_3
                 }                
             }
         }
+
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {            
+            Reportes.NominaMaster dsMaster = new Reportes.NominaMaster();
+            dsMaster.dtNominaMaster.AdddtNominaMasterRow(txtcodigo.Text, txtfecha.Text,
+                                                         cheprocesada.Checked ? "PROCESADA" : "SIN PROCESAR",
+                                                         txttotaldeducciones.Text, txtsueldoneto.Text, txttotalnomina.Text);
+
+            //Llenando el detalle..
+            for (int i = 0; i <= dtdetallesnomina.Rows.Count - 1; i++)
+            {
+                dsMaster.dtNominaDetalle.AdddtNominaDetalleRow(
+                    dtdetallesnomina.Rows[i].Cells["cod"].Value.ToString(),
+                    dtdetallesnomina.Rows[i].Cells["nombre"].Value.ToString(),
+                    dtdetallesnomina.Rows[i].Cells["cargo"].Value.ToString(),
+                    dtdetallesnomina.Rows[i].Cells["sueldobruto"].Value.ToString(),
+                    dtdetallesnomina.Rows[i].Cells["ISR"].Value.ToString(),
+                    dtdetallesnomina.Rows[i].Cells["ss"].Value.ToString(),
+                    dtdetallesnomina.Rows[i].Cells["otros"].Value.ToString(),
+                    dtdetallesnomina.Rows[i].Cells["deducciones"].Value.ToString(),
+                    dtdetallesnomina.Rows[i].Cells["sueldoneto"].Value.ToString()
+               );               
+            }
+          
+            dsMaster.AcceptChanges();
+
+            //Llenar el reporte...
+            Reportes.NominaCrystalReport nominaCrystalReport = new Reportes.NominaCrystalReport();
+            nominaCrystalReport.SetDataSource(dsMaster);
+
+            //LLamar formulario
+            Reportes.frmReportes frmReportes = new Reportes.frmReportes(nominaCrystalReport);
+            frmReportes.Show();
+        }
     }
 }
  

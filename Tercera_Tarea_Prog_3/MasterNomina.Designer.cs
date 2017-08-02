@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnbuscar = new System.Windows.Forms.Button();
             this.txtcodigo = new System.Windows.Forms.TextBox();
             this.txtfecha = new System.Windows.Forms.TextBox();
@@ -48,6 +48,17 @@
             this.btnagregar = new System.Windows.Forms.Button();
             this.btnbus = new System.Windows.Forms.Button();
             this.dtdetallesnomina = new System.Windows.Forms.DataGridView();
+            this.iddetalles = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sueldobruto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ISR = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SS = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.otros = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deducciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sueldoneto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txttotal = new System.Windows.Forms.TextBox();
             this.txttotaldeducciones = new System.Windows.Forms.TextBox();
             this.txttotalnomina = new System.Windows.Forms.TextBox();
@@ -66,17 +77,7 @@
             this.lbcargo = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtsueldoneto = new System.Windows.Forms.TextBox();
-            this.iddetalles = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cod = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cargo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sueldobruto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ISR = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SS = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.otros = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.deducciones = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sueldoneto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Estatus = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnImprimir = new System.Windows.Forms.Button();
             this.grDatosEmpleados.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtdetallesnomina)).BeginInit();
             this.SuspendLayout();
@@ -210,14 +211,14 @@
             // 
             this.dtdetallesnomina.AllowUserToAddRows = false;
             this.dtdetallesnomina.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtdetallesnomina.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtdetallesnomina.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtdetallesnomina.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtdetallesnomina.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iddetalles,
@@ -239,6 +240,111 @@
             this.dtdetallesnomina.Size = new System.Drawing.Size(939, 217);
             this.dtdetallesnomina.TabIndex = 6;
             this.dtdetallesnomina.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dtdetallesnomina_KeyDown);
+            // 
+            // iddetalles
+            // 
+            this.iddetalles.DataPropertyName = "iddetalle";
+            this.iddetalles.HeaderText = "Detalles";
+            this.iddetalles.Name = "iddetalles";
+            this.iddetalles.ReadOnly = true;
+            this.iddetalles.Visible = false;
+            // 
+            // Cod
+            // 
+            this.Cod.DataPropertyName = "codempleado";
+            this.Cod.HeaderText = "Codigo";
+            this.Cod.Name = "Cod";
+            this.Cod.ReadOnly = true;
+            this.Cod.Width = 60;
+            // 
+            // nombre
+            // 
+            this.nombre.DataPropertyName = "nombre";
+            this.nombre.HeaderText = "Nombre";
+            this.nombre.Name = "nombre";
+            this.nombre.ReadOnly = true;
+            this.nombre.Width = 200;
+            // 
+            // cargo
+            // 
+            this.cargo.DataPropertyName = "cargo";
+            this.cargo.HeaderText = "Cargo";
+            this.cargo.Name = "cargo";
+            this.cargo.ReadOnly = true;
+            this.cargo.Width = 150;
+            // 
+            // sueldobruto
+            // 
+            this.sueldobruto.DataPropertyName = "sueldo";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle2.Format = "N2";
+            this.sueldobruto.DefaultCellStyle = dataGridViewCellStyle2;
+            this.sueldobruto.HeaderText = "Sueldo Bruto";
+            this.sueldobruto.Name = "sueldobruto";
+            this.sueldobruto.ReadOnly = true;
+            // 
+            // ISR
+            // 
+            this.ISR.DataPropertyName = "IRS";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle3.Format = "N2";
+            this.ISR.DefaultCellStyle = dataGridViewCellStyle3;
+            this.ISR.HeaderText = "ISR";
+            this.ISR.Name = "ISR";
+            this.ISR.ReadOnly = true;
+            this.ISR.Width = 70;
+            // 
+            // SS
+            // 
+            this.SS.DataPropertyName = "SS";
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle4.Format = "N2";
+            this.SS.DefaultCellStyle = dataGridViewCellStyle4;
+            this.SS.HeaderText = "S.S";
+            this.SS.Name = "SS";
+            this.SS.ReadOnly = true;
+            this.SS.Width = 70;
+            // 
+            // otros
+            // 
+            this.otros.DataPropertyName = "Otros";
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle5.Format = "N2";
+            this.otros.DefaultCellStyle = dataGridViewCellStyle5;
+            this.otros.HeaderText = "Otros";
+            this.otros.Name = "otros";
+            this.otros.ReadOnly = true;
+            this.otros.Width = 70;
+            // 
+            // deducciones
+            // 
+            this.deducciones.DataPropertyName = "deducciones";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle6.Format = "N2";
+            this.deducciones.DefaultCellStyle = dataGridViewCellStyle6;
+            this.deducciones.HeaderText = "Deducciones";
+            this.deducciones.Name = "deducciones";
+            this.deducciones.ReadOnly = true;
+            this.deducciones.Width = 80;
+            // 
+            // sueldoneto
+            // 
+            this.sueldoneto.DataPropertyName = "sueldoneto";
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
+            dataGridViewCellStyle7.Format = "N2";
+            this.sueldoneto.DefaultCellStyle = dataGridViewCellStyle7;
+            this.sueldoneto.HeaderText = "Sueldo Neto";
+            this.sueldoneto.Name = "sueldoneto";
+            this.sueldoneto.ReadOnly = true;
+            this.sueldoneto.Width = 95;
+            // 
+            // Estatus
+            // 
+            this.Estatus.DataPropertyName = "Estatus";
+            this.Estatus.HeaderText = "Estatus";
+            this.Estatus.Name = "Estatus";
+            this.Estatus.ReadOnly = true;
+            this.Estatus.Visible = false;
             // 
             // txttotal
             // 
@@ -428,110 +534,17 @@
             this.txtsueldoneto.TabIndex = 72;
             this.txtsueldoneto.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // iddetalles
+            // btnImprimir
             // 
-            this.iddetalles.DataPropertyName = "iddetalle";
-            this.iddetalles.HeaderText = "Detalles";
-            this.iddetalles.Name = "iddetalles";
-            this.iddetalles.ReadOnly = true;
-            this.iddetalles.Visible = false;
-            // 
-            // Cod
-            // 
-            this.Cod.DataPropertyName = "codempleado";
-            this.Cod.HeaderText = "Codigo";
-            this.Cod.Name = "Cod";
-            this.Cod.ReadOnly = true;
-            this.Cod.Width = 60;
-            // 
-            // nombre
-            // 
-            this.nombre.DataPropertyName = "nombre";
-            this.nombre.HeaderText = "Nombre";
-            this.nombre.Name = "nombre";
-            this.nombre.ReadOnly = true;
-            this.nombre.Width = 200;
-            // 
-            // cargo
-            // 
-            this.cargo.DataPropertyName = "cargo";
-            this.cargo.HeaderText = "Cargo";
-            this.cargo.Name = "cargo";
-            this.cargo.ReadOnly = true;
-            this.cargo.Width = 150;
-            // 
-            // sueldobruto
-            // 
-            this.sueldobruto.DataPropertyName = "sueldo";
-            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle16.Format = "N2";
-            this.sueldobruto.DefaultCellStyle = dataGridViewCellStyle16;
-            this.sueldobruto.HeaderText = "Sueldo Bruto";
-            this.sueldobruto.Name = "sueldobruto";
-            this.sueldobruto.ReadOnly = true;
-            // 
-            // ISR
-            // 
-            this.ISR.DataPropertyName = "IRS";
-            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle17.Format = "N2";
-            this.ISR.DefaultCellStyle = dataGridViewCellStyle17;
-            this.ISR.HeaderText = "ISR";
-            this.ISR.Name = "ISR";
-            this.ISR.ReadOnly = true;
-            this.ISR.Width = 70;
-            // 
-            // SS
-            // 
-            this.SS.DataPropertyName = "SS";
-            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle18.Format = "N2";
-            this.SS.DefaultCellStyle = dataGridViewCellStyle18;
-            this.SS.HeaderText = "S.S";
-            this.SS.Name = "SS";
-            this.SS.ReadOnly = true;
-            this.SS.Width = 70;
-            // 
-            // otros
-            // 
-            this.otros.DataPropertyName = "Otros";
-            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle19.Format = "N2";
-            this.otros.DefaultCellStyle = dataGridViewCellStyle19;
-            this.otros.HeaderText = "Otros";
-            this.otros.Name = "otros";
-            this.otros.ReadOnly = true;
-            this.otros.Width = 70;
-            // 
-            // deducciones
-            // 
-            this.deducciones.DataPropertyName = "deducciones";
-            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle20.Format = "N2";
-            this.deducciones.DefaultCellStyle = dataGridViewCellStyle20;
-            this.deducciones.HeaderText = "Deducciones";
-            this.deducciones.Name = "deducciones";
-            this.deducciones.ReadOnly = true;
-            this.deducciones.Width = 80;
-            // 
-            // sueldoneto
-            // 
-            this.sueldoneto.DataPropertyName = "sueldoneto";
-            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleRight;
-            dataGridViewCellStyle21.Format = "N2";
-            this.sueldoneto.DefaultCellStyle = dataGridViewCellStyle21;
-            this.sueldoneto.HeaderText = "Sueldo Neto";
-            this.sueldoneto.Name = "sueldoneto";
-            this.sueldoneto.ReadOnly = true;
-            this.sueldoneto.Width = 95;
-            // 
-            // Estatus
-            // 
-            this.Estatus.DataPropertyName = "Estatus";
-            this.Estatus.HeaderText = "Estatus";
-            this.Estatus.Name = "Estatus";
-            this.Estatus.ReadOnly = true;
-            this.Estatus.Visible = false;
+            this.btnImprimir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnImprimir.Location = new System.Drawing.Point(362, 399);
+            this.btnImprimir.Name = "btnImprimir";
+            this.btnImprimir.Size = new System.Drawing.Size(75, 23);
+            this.btnImprimir.TabIndex = 74;
+            this.btnImprimir.Text = "Imprimir";
+            this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // MasterNomina
             // 
@@ -539,6 +552,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Desktop;
             this.ClientSize = new System.Drawing.Size(956, 495);
+            this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtsueldoneto);
             this.Controls.Add(this.lbcargo);
@@ -618,5 +632,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn deducciones;
         private System.Windows.Forms.DataGridViewTextBoxColumn sueldoneto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estatus;
+        private System.Windows.Forms.Button btnImprimir;
     }
 }
